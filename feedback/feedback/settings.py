@@ -29,8 +29,8 @@ ALLOWED_HOSTS = []
 
 # email host
 EMAIL_HOST = 'smtp.zoho.in'
-EMAIL_HOST_USER = 'feedb4ck@zohomail.in'
-EMAIL_HOST_PASSWORD = 'averylongandterriblepassword'
+EMAIL_HOST_USER = #your email id here
+EMAIL_HOST_PASSWORD = #your email password here
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
