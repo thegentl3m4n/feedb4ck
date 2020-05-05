@@ -1,0 +1,64 @@
+{% extends "app/base.html" %}
+
+
+{% block content %}
+
+<form method="post" action="{% url 'home' %}">
+  {% csrf_token %}
+ <div class="container">
+   <h1>Feedback</h1>
+     <p>Please fill in this form for Feedback</p>
+   <hr>
+
+   <label for="name"><b>Full Name</b></label>
+     <input
+       type="text"
+       placeholder="i.e,john cena"
+       name="name"
+       required
+     />
+   <br>
+
+   <label for="email"><b>enter your email,</b>(optional)</label>
+     <input
+       type="email"
+       placeholder="i.e,john@email.com"
+       name="email"
+       optional
+     />
+     <br>
+
+   <label for="name_of_dept"><b>Department</b></label>
+     <input
+       type="text"
+       placeholder="i.e,management,engineering,etc..."
+       name="name_of_dept"
+       required
+     />
+     <br>
+
+   <label for="feedback_subject"><b>enter feedback subject</b></label>
+     <input
+       type="text"
+       placeholder="i.e,bus,academics,library,hostel,etc..."
+       name="feedback_subject"
+       required
+     />
+     <br>
+
+   <label for="feedback_msg"><b>write your Feedback</b></label>
+     <input
+       type="text"
+       placeholder="#"
+       name="feedback_msg"
+       required
+     />
+
+   <hr>
+
+   <p>By entering the information you agree to our <a href="#">Terms & Privacy</a>.</p>
+   <input type="submit" />
+   </div>
+
+</form>
+{% endblock content %}                       
