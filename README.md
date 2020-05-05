@@ -1,7 +1,7 @@
 # feedb4ck
 a simple feedback form that sends feedback to your email
 
-# msg for front-end developer
+# message for front-end developer
 dont fuck with any backend codes
 
 # how to run (for those who are new to django)
